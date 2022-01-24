@@ -40,20 +40,19 @@
 }
 
 .title {
-  margin: 0;
+  margin-right: 20px;
   line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
+  font-size: 1.5rem;
 }
 
 .description {
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
 }
 
 .code {
