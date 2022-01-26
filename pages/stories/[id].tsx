@@ -12,13 +12,7 @@ export default function Story({ storyData }: any) {
       <Head>
         <title>{storyData.title}</title>
       </Head>
-      <Script
-        src="https://connect.facebook.net/en_US/sdk.js"
-        strategy="lazyOnload"
-        onLoad={() => {
-          console.log("window.FB is populated, script loaded");
-        }}
-      />
+
       <h1 className={utilStyles.headingXl}>{storyData.title}</h1>
 
       <div className={utilStyles.lightText}>
