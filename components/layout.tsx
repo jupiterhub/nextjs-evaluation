@@ -4,7 +4,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-const name = "Jupiter";
+const name = "Pipu";
 export const siteTitle = "Pipu App in Next";
 
 export default function Layout({ children, home }) {
