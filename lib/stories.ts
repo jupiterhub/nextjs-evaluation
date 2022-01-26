@@ -27,7 +27,7 @@ export function getSortedStoriesData() {
     };
   });
   // Sort posts by date
-  return allPostsData.sort(({ date: a }, { date: b }) => {
+  return allPostsData.sort(({ date: a }: any, { date: b }: any) => {
     if (a < b) {
       return 1;
     } else if (a > b) {
@@ -50,7 +50,7 @@ export function getAllStoryIds() {
   });
 }
 
-export async function getStoryData(id) {
+export async function getStoryData(id: any) {
   const fullPath = path.join(storiesDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf-8");
 

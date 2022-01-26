@@ -6,7 +6,7 @@ import { getAllStoryIds, getStoryData } from "../../lib/stories";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 
-export default function Story({ storyData }) {
+export default function Story({ storyData }: any) {
   return (
     <Layout home={false}>
       <Head>
@@ -47,7 +47,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
   const storyData = await getStoryData(params.id);
 
   return {

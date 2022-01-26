@@ -7,7 +7,7 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedStoriesData } from "../lib/stories";
 
-const Home: NextPage = ({ allStoriesData }) => {
+const Home: NextPage = ({ allStoriesData }: any) => {
   return (
     <Layout home>
       <Head>
@@ -17,7 +17,7 @@ const Home: NextPage = ({ allStoriesData }) => {
         <nav className={styles.nav}>
           <div className={styles.title}>
             <ul>
-              {allStoriesData.map(({ id, date, title }) => (
+              {allStoriesData.map(({ id, date, title }: any) => (
                 <li key={id}>
                   <Link href={`/stories/${id}`}>
                     <a>{title}</a>
